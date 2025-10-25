@@ -1,0 +1,12 @@
+make clean
+make
+sudo /lib/modules/$(uname -r)/build/scripts/sign-file sha256 \
+  ~/kmod_keys/MOK.priv ~/kmod_keys/MOK.der cxl_ssd_sim.ko
+sudo insmod cxl_ssd_sim.ko mem_mb=8 delay_us=100
+ls -l /dev/ssdmem0
+gcc -O2 -Wall -std=gnu11 user_test.c -o user_test
+sudo ./user_test 4     # 先映射 4MB 做验证
+
+sudo journalctl -k -b | tail -n 100
+# 或
+sudo dmesg -T | tail -n 100

@@ -44,7 +44,7 @@ int main(int argc, char **argv) {
     size_t step = 4096;
     size_t pages = length / step;
     for (size_t i = 0; i < pages; i++) {
-        p[i * step] = (uint8_t)i; // 触发缺页：写每个页的第一个字节
+       volatile uint8_t x = p[i * step]; (void)x;// 触发缺页：写每个页的第一个字节
     }
     uint64_t t1 = ns_now();
     printf("touched %zu pages in %.3f ms (avg %.3f us/page)\n",
