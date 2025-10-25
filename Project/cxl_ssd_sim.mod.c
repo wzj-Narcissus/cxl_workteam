@@ -18,82 +18,76 @@ __section(".gnu.linkonce.this_module") = {
 
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
-	{ 0xf1de9e85, "vfree" },
-	{ 0xe8213e80, "_printk" },
-	{ 0xab571464, "misc_deregister" },
-	{ 0xa96d32ba, "__udelay" },
+	{ 0x690fb1ed, "class_destroy" },
+	{ 0x52b15b3b, "__unregister_chrdev" },
+	{ 0xa254dac2, "__free_pages" },
+	{ 0xcb8b6ec6, "kfree" },
+	{ 0xa59da3c0, "down_write" },
+	{ 0xa59da3c0, "up_write" },
+	{ 0x5e865cb8, "pgprot_writecombine" },
+	{ 0xd710adbf, "__kmalloc_noprof" },
 	{ 0x6077a174, "alloc_pages_noprof" },
-	{ 0x5d05e3c5, "pcpu_hot" },
-	{ 0xc9b02247, "const_pcpu_hot" },
-	{ 0xbd03ed67, "vmemmap_base" },
-	{ 0xbd03ed67, "page_offset_base" },
-	{ 0x77047fb4, "vm_insert_page" },
-	{ 0x44decd6f, "hugetlb_optimize_vmemmap_key" },
-	{ 0x44decd6f, "devmap_managed_key" },
-	{ 0xd6cbdf2c, "__put_devmap_managed_folio_refs" },
-	{ 0x0feb1e94, "usleep_range_state" },
-	{ 0xa86be0a8, "__folio_put" },
-	{ 0xd272d446, "__SCT__preempt_schedule" },
+	{ 0x78a12d13, "__register_chrdev" },
+	{ 0x3cd2d66b, "class_create" },
+	{ 0x2035aec5, "device_create" },
 	{ 0x2d4f4516, "param_ops_uint" },
 	{ 0xd272d446, "__fentry__" },
+	{ 0xe8213e80, "_printk" },
 	{ 0xd272d446, "__x86_return_thunk" },
-	{ 0xd7a59a65, "vzalloc_noprof" },
-	{ 0x0011321a, "misc_register" },
+	{ 0x44decd6f, "hugetlb_optimize_vmemmap_key" },
+	{ 0xa96d32ba, "__udelay" },
+	{ 0x5d1ebb98, "device_destroy" },
 	{ 0xd268ca91, "module_layout" },
 };
 
 static const u32 ____version_ext_crcs[]
 __used __section("__version_ext_crcs") = {
-	0xf1de9e85,
-	0xe8213e80,
-	0xab571464,
-	0xa96d32ba,
+	0x690fb1ed,
+	0x52b15b3b,
+	0xa254dac2,
+	0xcb8b6ec6,
+	0xa59da3c0,
+	0xa59da3c0,
+	0x5e865cb8,
+	0xd710adbf,
 	0x6077a174,
-	0x5d05e3c5,
-	0xc9b02247,
-	0xbd03ed67,
-	0xbd03ed67,
-	0x77047fb4,
-	0x44decd6f,
-	0x44decd6f,
-	0xd6cbdf2c,
-	0x0feb1e94,
-	0xa86be0a8,
-	0xd272d446,
+	0x78a12d13,
+	0x3cd2d66b,
+	0x2035aec5,
 	0x2d4f4516,
 	0xd272d446,
+	0xe8213e80,
 	0xd272d446,
-	0xd7a59a65,
-	0x0011321a,
+	0x44decd6f,
+	0xa96d32ba,
+	0x5d1ebb98,
 	0xd268ca91,
 };
 static const char ____version_ext_names[]
 __used __section("__version_ext_names") =
-	"vfree\0"
-	"_printk\0"
-	"misc_deregister\0"
-	"__udelay\0"
+	"class_destroy\0"
+	"__unregister_chrdev\0"
+	"__free_pages\0"
+	"kfree\0"
+	"down_write\0"
+	"up_write\0"
+	"pgprot_writecombine\0"
+	"__kmalloc_noprof\0"
 	"alloc_pages_noprof\0"
-	"pcpu_hot\0"
-	"const_pcpu_hot\0"
-	"vmemmap_base\0"
-	"page_offset_base\0"
-	"vm_insert_page\0"
-	"hugetlb_optimize_vmemmap_key\0"
-	"devmap_managed_key\0"
-	"__put_devmap_managed_folio_refs\0"
-	"usleep_range_state\0"
-	"__folio_put\0"
-	"__SCT__preempt_schedule\0"
+	"__register_chrdev\0"
+	"class_create\0"
+	"device_create\0"
 	"param_ops_uint\0"
 	"__fentry__\0"
+	"_printk\0"
 	"__x86_return_thunk\0"
-	"vzalloc_noprof\0"
-	"misc_register\0"
+	"hugetlb_optimize_vmemmap_key\0"
+	"__udelay\0"
+	"device_destroy\0"
 	"module_layout\0"
 ;
 
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "B776C7C0F0C7889F52916AA");
+MODULE_INFO(srcversion, "64F2B4D750178905C3A1A79");
